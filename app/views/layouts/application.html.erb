@@ -9,7 +9,6 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <div class="ui small inverted menu">
       <div class="ui container">
@@ -17,6 +16,7 @@
       </div>
     </div>
     <div class="ui container">
+      <%= render 'layouts/messages' %>
       <%= yield %>
     </div>
   </body>
